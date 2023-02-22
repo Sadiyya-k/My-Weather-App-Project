@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/68cdf4886d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form id="search-engine">
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search Location  📍"
+                  aria-label="Search"
+                  id="searching-city"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+                <button
+                  class="location-button"
+                  type="submit"
+                  id="current-location-button"
+                >
+                  Current
+                </button>
+              </form>
+            </div>
+          </nav>
+        </form>
+
+        <h2>Air Quality</h2>
+        <h3>Good</h3>
+        <div class="row">
+          <div class="col-6">
+            <ul class="first-list">
+              <li class="temp" id="current-temp">
+                4
+                <span id="celsius" class="degreeCelcius">°C</span>
+              </li>
+              <li class="feels-like">Sunny</li>
+              <li class="place-of-search" id="enter-city-name">Bracknell</li>
+              <li class="time" id="time-displayed">12:51pm</li>
+              <li class="todays-date" id="date-displayed">29th Jan 2023</li>
+            </ul>
+          </div>
+
+          <div class="col-6">
+            <ul class="second-list">
+              <li>Sunrise:</li>
+              <li>Sunset:</li>
+              <li>wind:</li>
+              <li>Humidity:</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
