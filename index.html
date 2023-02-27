@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script
       src="https://kit.fontawesome.com/68cdf4886d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -36,7 +36,7 @@
                   Search
                 </button>
                 <button
-                  class="location-button"
+                  class="btn btn-success"
                   type="submit"
                   id="current-location-button"
                 >
@@ -52,34 +52,33 @@
         <div class="row">
           <div class="col-6">
             <ul class="first-list">
-              <li class="temp" id="current-temp">
-                4
-                <span id="celsius" class="degreeCelcius">°C</span>
+              <li class="temp" id="current-temperature">
+                <span class="celsiusSymbol">°C</span>
               </li>
               <li class="feels-like">Sunny</li>
-              <li class="place-of-search" id="enter-city-name">Bracknell</li>
+              <li class="place-of-search" id="city-name"></li>
               <li class="time" id="time-displayed">12:51pm</li>
-              <li class="todays-date" id="date-displayed">29th Jan 2023</li>
+              <li class="todays-date" id="date-displayed">
+                29th <span id="month-displayed">Jan</span>
+                <span id="year-displayed">2023</span>
+              </li>
             </ul>
           </div>
 
           <div class="col-6">
             <ul class="second-list">
-              <li>Sunrise:</li>
-              <li>Sunset:</li>
-              <li>wind:</li>
-              <li>Humidity:</li>
+              <li>Wind : <span id="wind"></span>mp/h</li>
+              <li>Humidity : <span id="humidity"></span>%</li>
+              <li>Feels like : <span id="feels-like"></span></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
     <footer>
-      <a
-        href="https://github.com/Sadiyya-k/My-Weather-App-Project.git"
-        target="_blank"
-        >Coded </a
-      >by Sadiyya Khan
+      <a href="https://github.com/Sadiyya-k/My-Weather-App-Project.git">
+        Open-source code</a
+      >, by Sadiyya Khan
     </footer>
     <script src="src/index.js"></script>
   </body>
