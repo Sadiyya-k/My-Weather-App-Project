@@ -20,66 +20,68 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form id="search-engine">
-          <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search Location  📍"
-                  aria-label="Search"
-                  id="searching-city"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-                <button
-                  class="btn btn-success"
-                  type="submit"
-                  id="current-location-button"
-                >
-                  Current
-                </button>
-              </form>
+      <div class="waether-app-wrap">
+        <div class="weather-app">
+          <form id="search-engine">
+            <nav class="navbar bg-body-tertiary">
+              <div class="container-fluid">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search Location  📍"
+                    aria-label="Search"
+                    id="searching-city"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                  <button
+                    class="btn btn-success"
+                    type="submit"
+                    id="current-location-button"
+                  >
+                    Current
+                  </button>
+                </form>
+              </div>
+            </nav>
+          </form>
+
+          <h2>Air Quality</h2>
+          <h3>Good</h3>
+          <div class="row">
+            <div class="col-6">
+              <ul class="first-list">
+                <li class="temp" id="current-temperature">
+                  <span class="celsiusSymbol">°C</span>
+                </li>
+                <li class="feels-like">Sunny</li>
+                <li class="place-of-search" id="city-name"></li>
+                <li class="time" id="time-displayed">12:51pm</li>
+                <li class="todays-date" id="date-displayed">
+                  29th <span id="month-displayed">Jan</span>
+                  <span id="year-displayed">2023</span>
+                </li>
+              </ul>
             </div>
-          </nav>
-        </form>
 
-        <h2>Air Quality</h2>
-        <h3>Good</h3>
-        <div class="row">
-          <div class="col-6">
-            <ul class="first-list">
-              <li class="temp" id="current-temperature">
-                <span class="celsiusSymbol">°C</span>
-              </li>
-              <li class="feels-like">Sunny</li>
-              <li class="place-of-search" id="city-name"></li>
-              <li class="time" id="time-displayed">12:51pm</li>
-              <li class="todays-date" id="date-displayed">
-                29th <span id="month-displayed">Jan</span>
-                <span id="year-displayed">2023</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-6">
-            <ul class="second-list">
-              <li>Wind : <span id="wind"></span>mp/h</li>
-              <li>Humidity : <span id="humidity"></span>%</li>
-              <li>Feels like : <span id="feels-like"></span></li>
-            </ul>
+            <div class="col-6">
+              <ul class="second-list">
+                <li>Wind : <span id="wind"></span>mp/h</li>
+                <li>Humidity : <span id="humidity"></span>%</li>
+                <li>Feels like : <span id="feels-like"></span></li>
+              </ul>
+            </div>
           </div>
         </div>
+        <footer>
+          <a href="https://github.com/Sadiyya-k/My-Weather-App-Project.git">
+            Open-source code</a
+          >, by Sadiyya Khan
+        </footer>
       </div>
     </div>
-    <footer>
-      <a href="https://github.com/Sadiyya-k/My-Weather-App-Project.git">
-        Open-source code</a
-      >, by Sadiyya Khan
-    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>

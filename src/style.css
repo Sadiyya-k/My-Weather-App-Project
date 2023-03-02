@@ -15,7 +15,7 @@ li {
 footer {
   font-size: 13px;
   font-weight: 100;
-  text-align: center;
+
   margin-top: 7px;
 }
 a {
@@ -24,12 +24,14 @@ a {
 .celciusSymbol {
   font-size: 25px;
 }
-
+.weather-app-wrap{
+  margin: auto;
+}
 .weather-app {
   border: 1px solid black;
   border-radius: 15px;
   max-width: 75%;
-  margin: auto;
+  
 }
 .bg-body-tertiary {
   flex-wrap: nowrap;
