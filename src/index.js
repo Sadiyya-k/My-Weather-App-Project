@@ -41,20 +41,26 @@ timeDisplayed.innerHTML = formattedDateTime.time;
 
 function displayCityTemperature(response) {
   console.log(response.data);
+  let iconElement = document.querySelector("#icon");
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#current-temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].description;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
   document.querySelector("#humidity").innerHTML = Math.round(
     response.data.main.humidity
   );
-  document.querySelector("#feels-like").innerHTML = Math.round(
-    response.data.main.feels_like
+
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/10d@2x.png`
   );
 }
+
 function searchCity(cityName) {
   let apiKey = "c357fbc1652ba928fb4889b9f943b38c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;

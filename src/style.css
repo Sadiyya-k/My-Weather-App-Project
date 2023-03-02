@@ -5,33 +5,40 @@ body {
 h1 {
   margin-top: -10px;
 }
-h2,
-h3 {
-  text-align: center;
-}
+
 li {
   list-style-type: none;
 }
+
 footer {
   font-size: 13px;
   font-weight: 100;
-
-  margin-top: 7px;
+  margin: 0 auto;
 }
 a {
   text-decoration: none;
 }
+.weather-app {
+  margin: 25px auto;
+  border: 1px solid black;
+  border-radius: 15px;
+  max-width: 65%;
+  height: 500px;
+}
+
+.first-list {
+  margin-left: 10px;
+  margin-top: 40px;
+  background-color: #ececec;
+  max-width: 80%;
+  height: 90%;
+  border-radius: 20%;
+}
 .celciusSymbol {
   font-size: 25px;
 }
-.weather-app-wrap{
-  margin: auto;
-}
-.weather-app {
-  border: 1px solid black;
-  border-radius: 15px;
-  max-width: 75%;
-  
+.second-list{
+  margin-top: 30px;
 }
 .bg-body-tertiary {
   flex-wrap: nowrap;
@@ -52,27 +59,23 @@ a {
   font-size: 32px;
   margin-top: -15px;
 }
+
 .place-of-search {
   font-size: 40px;
   margin-top: -15px;
 }
 .time {
   font-size: 20px;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 .todays-date {
   font-size: 20px;
-  margin-top: -10px;
+  margin-top: -5px;
   margin-left: 3px;
   margin-bottom: 50px;
 }
-.first-list {
-  background-color: #ececec;
-  max-width: 60%;
-  height: 100%;
-  border-radius: 20%;
-}
+
 .location-button {
   font-size: 15px;
   padding: 7px 11px;

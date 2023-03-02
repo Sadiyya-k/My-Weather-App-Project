@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="waether-app-wrap">
+      <div class="weather-app-wrap">
         <div class="weather-app">
           <form id="search-engine">
             <nav class="navbar bg-body-tertiary">
@@ -47,21 +47,23 @@
               </div>
             </nav>
           </form>
-
-          <h2>Air Quality</h2>
-          <h3>Good</h3>
           <div class="row">
             <div class="col-6">
               <ul class="first-list">
-                <li class="temp" id="current-temperature">
+                <li class="temp" id="current-temperature"><img
+                    src="http://openweathermap.org/img/wn/10d@2x.png"
+                    alt=""
+                    id="icon"
+                  />
+                  
                   <span class="celsiusSymbol">°C</span>
                 </li>
-                <li class="feels-like">Sunny</li>
+                <li class="feels-like" id="description"></li>
                 <li class="place-of-search" id="city-name"></li>
-                <li class="time" id="time-displayed">12:51pm</li>
+                <li class="time" id="time-displayed"></li>
                 <li class="todays-date" id="date-displayed">
-                  29th <span id="month-displayed">Jan</span>
-                  <span id="year-displayed">2023</span>
+                  <span id="month-displayed"></span>
+                  <span id="year-displayed"></span>
                 </li>
               </ul>
             </div>
@@ -70,7 +72,6 @@
               <ul class="second-list">
                 <li>Wind : <span id="wind"></span>mp/h</li>
                 <li>Humidity : <span id="humidity"></span>%</li>
-                <li>Feels like : <span id="feels-like"></span></li>
               </ul>
             </div>
           </div>
