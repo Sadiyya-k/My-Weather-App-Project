@@ -14,6 +14,7 @@ footer {
   font-size: 13px;
   font-weight: 200;
   margin: 0 auto;
+  max-width: 75%;
 }
 a {
   text-decoration: none;
@@ -21,8 +22,8 @@ a {
 .weather-app {
   margin: 25px auto;
   border: 1px solid black;
-  border-radius: 15px;
-  max-width: 65%;
+  border-radius: 7px;
+  max-width: 75%;
   height: 500px;
 }
 
@@ -40,16 +41,18 @@ a {
 .second-list {
   margin-top: 30px;
 }
+.form-control {
+  max-width: 100%;
+}
+
 .bg-body-tertiary {
   flex-wrap: nowrap;
   width: 75%;
   margin-top: 15px;
   margin-left: 15px;
-  padding-right: 20px;
+  padding-right: 10px;
 }
-.form-control {
-  width: 100%;
-}
+
 .temp {
   font-size: 48px;
   margin-top: -25px;
@@ -93,4 +96,23 @@ a {
   border: 1px solid #198754;
   color: #198754;
   background: none;
+}
+.conversion-button {
+  font-size: 15px;
+  border-radius: 7px;
+  border: 1px solid #198754;
+  color: #198754;
+  background: none;
+  margin: 0 auto;
+  padding: 7px 11px;
+  text-align: center;
+  width: 90px;
+}
+
+.active {
+  color: black;
+  cursor: default;
+}
+.active :hover {
+  text-decoration: none;
 }
