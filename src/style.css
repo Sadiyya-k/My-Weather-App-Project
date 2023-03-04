@@ -12,7 +12,7 @@ li {
 
 footer {
   font-size: 13px;
-  font-weight: 100;
+  font-weight: 200;
   margin: 0 auto;
 }
 a {
@@ -34,17 +34,17 @@ a {
   height: 90%;
   border-radius: 20%;
 }
-.celciusSymbol {
+.celsiusSymbol {
   font-size: 25px;
 }
-.second-list{
+.second-list {
   margin-top: 30px;
 }
 .bg-body-tertiary {
   flex-wrap: nowrap;
-  width: 55%;
-  margin: 7px;
-  margin-right: 25px;
+  width: 75%;
+  margin-top: 15px;
+  margin-left: 15px;
   padding-right: 20px;
 }
 .form-control {
@@ -77,6 +77,15 @@ a {
 }
 
 .location-button {
+  font-size: 15px;
+  padding: 7px 11px;
+  margin: 10px;
+  border-radius: 7px;
+  border: 1px solid #198754;
+  color: #198754;
+  background: none;
+}
+.current-button {
   font-size: 15px;
   padding: 7px 11px;
   margin: 10px;

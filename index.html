@@ -37,12 +37,25 @@
                     Search
                   </button>
                   <button
-                    class="btn btn-success"
+                    class="btn current-button"
                     type="submit"
                     id="current-location-button"
                   >
                     Current
                   </button>
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-info dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      °F
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">°C</a></li>
+                    </ul>
+                  </div>
                 </form>
               </div>
             </nav>
@@ -50,12 +63,13 @@
           <div class="row">
             <div class="col-6">
               <ul class="first-list">
-                <li class="temp" id="current-temperature"><img
+                <li class="temp">
+                  <img
                     src="http://openweathermap.org/img/wn/10d@2x.png"
                     alt=""
                     id="icon"
                   />
-                  
+                  <span id="current-temperature"></span>
                   <span class="celsiusSymbol">°C</span>
                 </li>
                 <li class="feels-like" id="description"></li>
@@ -76,6 +90,7 @@
             </div>
           </div>
         </div>
+
         <footer>
           <a href="https://github.com/Sadiyya-k/My-Weather-App-Project.git">
             Open-source code</a
