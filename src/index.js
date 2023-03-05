@@ -42,13 +42,13 @@ timeDisplayed.innerHTML = formattedDateTime.time;
 function displayCityTemperature(response) {
   let iconElement = document.querySelector("#icon");
 
-  celsiusTemperature = response.data.main.temp;
+  celsiusTemperature = response.data.temperature.current;
 
-  document.querySelector("#city-name").innerHTML = response.data.name;
+  document.querySelector("#city-name").innerHTML = response.data.city;
   document.querySelector("#current-temperature").innerHTML =
     Math.round(celsiusTemperature);
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].description;
+    response.data.condition.description;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
@@ -58,13 +58,13 @@ function displayCityTemperature(response) {
 
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/10d@2x.png`
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png`
   );
 }
 
 function searchCity(cityName) {
-  let apiKey = "c357fbc1652ba928fb4889b9f943b38c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+  let apiKey = "fbdaa6o7f8db80d139ftfd763b2b9e74";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${cityName}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayCityTemperature);
 }
 
@@ -74,8 +74,8 @@ function searchSubmit(event) {
   searchCity(cityName);
 }
 function searchCurrentLocation(position) {
-  let apiKey = "c357fbc1652ba928fb4889b9f943b38c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  let apiKey = "fbdaa6o7f8db80d139ftfd763b2b9e74";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${position.coords.longitude}&lat=${position.coords.latitude}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayCityTemperature);
 }
 
@@ -93,6 +93,7 @@ function displayFahrenheitTemperature(event) {
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
 }
+
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
