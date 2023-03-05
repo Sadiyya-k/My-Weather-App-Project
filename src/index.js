@@ -41,7 +41,9 @@ timeDisplayed.innerHTML = formattedDateTime.time;
 
 function displayCityTemperature(response) {
   let iconElement = document.querySelector("#icon");
+
   celsiusTemperature = response.data.main.temp;
+
   document.querySelector("#city-name").innerHTML = response.data.name;
   document.querySelector("#current-temperature").innerHTML =
     Math.round(celsiusTemperature);
@@ -82,22 +84,27 @@ function showCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchCurrentLocation);
 }
 
-let button = document.querySelector("#current-location-button");
-button.addEventListener("click", showCurrentLocation);
-
 function displayFahrenheitTemperature(event) {
-  event.preventDefault;
+  event.preventDefault();
   let currentTemperature = document.querySelector("#current-temperature");
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
 }
 function displayCelsiusTemperature(event) {
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   let currentTemperature = document.querySelector("#current-temperature");
   currentTemperature.innerHTML = Math.round(celsiusTemperature);
 }
 
 let celsiusTemperature = null;
+
+let button = document.querySelector("#current-location-button");
+button.addEventListener("click", showCurrentLocation);
 
 let searchForm = document.querySelector("#search-engine");
 searchForm.addEventListener("submit", searchSubmit);

@@ -9,6 +9,9 @@ h1 {
 li {
   list-style-type: none;
 }
+li:first-letter {
+  text-transform: capitalize;
+}
 
 footer {
   font-size: 13px;
@@ -22,18 +25,23 @@ a {
 .weather-app {
   margin: 25px auto;
   border: 1px solid black;
-  border-radius: 7px;
+  border-radius: 10px;
   max-width: 75%;
-  height: 500px;
+  height: 550px;
 }
 
 .first-list {
-  margin-left: 10px;
+  margin-left: 15px;
   margin-top: 40px;
+  padding-left: 0;
   background-color: #ececec;
-  max-width: 80%;
+  max-width: 70%;
   height: 90%;
-  border-radius: 20%;
+  border-radius: 40px;
+  text-align: center;
+}
+.navbar {
+  border-radius: 20px;
 }
 .celsiusSymbol {
   font-size: 25px;
@@ -110,9 +118,9 @@ a {
 }
 
 .active {
-  color: black;
+  color: red;
   cursor: default;
 }
-.active :hover {
+.active:hover {
   text-decoration: none;
 }
