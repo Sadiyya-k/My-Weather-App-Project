@@ -53,7 +53,7 @@ function displayCityTemperature(response) {
     response.data.wind.speed
   );
   document.querySelector("#humidity").innerHTML = Math.round(
-    response.data.main.humidity
+    response.data.temperature.humidity
   );
 
   iconElement.setAttribute(

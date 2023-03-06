@@ -69,34 +69,53 @@
           <div class="row">
             <div class="col-6">
               <ul class="first-list">
-                <li class="temp">
-                  <img
-                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-                    alt=""
-                    id="icon"
-                  />
-                  <span id="current-temperature"></span>
-                  <span class="celsiusSymbol">°C</span>
-                </li>
-                <li class="feels-like" id="description"></li>
-                <li class="place-of-search" id="city-name"></li>
-                <li class="time" id="time-displayed"></li>
-                <li class="todays-date" id="date-displayed">
-                  <span id="month-displayed"></span>
-                  <span id="year-displayed"></span>
-                </li>
+                <div class="flexbox weather-temperature">
+                  <li class="temp">
+                    <img
+                      src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+                      alt=""
+                      id="icon"
+                      class="float-left"
+                    />
+                    <div class="float-left">
+                      <span id="current-temperature"></span>
+                      <span class="celsiusSymbol">°C</span>
+                    </div>
+                  </li>
+                  <li class="feels-like" id="description"></li>
+                  <li class="place-of-search" id="city-name"></li>
+                  <li class="time" id="time-displayed"></li>
+                  <li class="todays-date" id="date-displayed">
+                    <span id="month-displayed"></span>
+                    <span id="year-displayed"></span>
+                  </li>
+                </div>
               </ul>
             </div>
-
             <div class="col-6">
               <ul class="second-list">
                 <li>Wind : <span id="wind"></span>mp/h</li>
                 <li>Humidity : <span id="humidity"></span>%</li>
               </ul>
             </div>
+            <div class="weather-forecast">
+              <div class="row">
+                <div class="col-2">
+                  <div class="weather-forecast-day">Mon</div>
+                  <img
+                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+                    alt=""
+                    width="50"
+                  />
+                  <div class="weather-forecast-temperatures">
+                    <span class="weather-forecast-temperature-max"> 5°</span>
+                    <span class="weather-forecast-temperature-min"> 3°</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
         <footer>
           <a href="https://github.com/Sadiyya-k/My-Weather-App-Project.git">
             Open-source code</a
