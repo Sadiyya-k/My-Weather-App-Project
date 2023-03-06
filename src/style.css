@@ -17,7 +17,7 @@ footer {
   font-size: 13px;
   font-weight: 200;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 85%;
 }
 a {
   text-decoration: none;
@@ -26,7 +26,7 @@ a {
   margin: 25px auto;
   border: 1px solid black;
   border-radius: 10px;
-  max-width: 90%;
+  max-width: 85%;
 }
 
 .first-list {
@@ -125,10 +125,10 @@ a {
   text-decoration: none;
 }
 .weather-forecast{
-  margin-top: 20px;
+  margin: 20px 82px;
   text-align: center;
 }
-.weather-forecast-day{
+.weather-forecast-date{
   font-size: 20px;
 }
 .weather-forecast-temperatures{
