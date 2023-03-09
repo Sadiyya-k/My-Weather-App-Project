@@ -67,6 +67,13 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHtml;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "fbdaa6o7f8db80d139ftfd763b2b9e74";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayCityTemperature(response) {
   let iconElement = document.querySelector("#icon");
 
@@ -88,6 +95,7 @@ function displayCityTemperature(response) {
     "src",
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png`
   );
+  getForecast(response.data.coordinates);
 }
 
 function searchCity(cityName) {
@@ -145,4 +153,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("london");
-displayForecast();
