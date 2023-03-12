@@ -126,6 +126,7 @@ a {
 }
 .weather-forecast {
   margin: 20px;
+  margin-left: -5px ;
   text-align: center;
 }
 .weather-forecast-date {
