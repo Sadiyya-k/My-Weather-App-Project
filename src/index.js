@@ -39,6 +39,14 @@ let formattedDateTime = formatDate(currentTime);
 dateDisplayed.innerHTML = formattedDateTime.date;
 timeDisplayed.innerHTML = formattedDateTime.time;
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
@@ -49,15 +57,21 @@ function displayForecast(response) {
       forecastHtml +
       ` 
                 <div class="col-2">
-                  <div class="weather-forecast-date">${forecastDay.day}</div>
+                  <div class="weather-forecast-date">${formatDay(
+                    forecastDay.time
+                  )}</div>
                   <img
-                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/${forecastDay.condition[0].icon}/broken-clouds-day.png"
+                    src="${forecastDay.condition.icon_url}"
                     alt=""
                     width="50"
                   />
                   <div class="weather-forecast-temperatures">
-                    <span class="weather-forecast-temperature-max"> ${forecastDay.temperature.max}°</span>
-                    <span class="weather-forecast-temperature-min"> ${forecastDay.temperature.min}°</span>
+                    <span class="weather-forecast-temperature-max"> ${
+                      forecastDay.temperature.maximum
+                    }°</span>
+                    <span class="weather-forecast-temperature-min"> ${
+                      forecastDay.temperature.minimum
+                    }°</span>
                   </div>
                 </div>
           `;

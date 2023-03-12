@@ -124,17 +124,16 @@ a {
 .active:hover {
   text-decoration: none;
 }
-.weather-forecast{
-  margin: 20px 82px;
+.weather-forecast {
+  margin: 20px;
   text-align: center;
 }
-.weather-forecast-date{
+.weather-forecast-date {
   font-size: 20px;
 }
-.weather-forecast-temperatures{
+.weather-forecast-temperatures {
   font-size: 22px;
 }
-.weather-forecast-temperature-min{
+.weather-forecast-temperature-min {
   opacity: 0.7;
 }
-
