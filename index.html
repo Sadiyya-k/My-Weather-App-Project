@@ -74,18 +74,16 @@
           </form>
           <div class="row">
             <div class="col-6">
-              <div class="flexbox weather-temperature">
-                <ul class="first-list">
+              <ul class="first-list">
+                <div class="flex-box">
                   <li class="temp">
                     <img
                       src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
                       alt="Clear"
                       id="icon"
-                      class="float-left"
                     />
-                    <div class="float-left">
+                    <div>
                       <span id="current-temperature"></span>
-
                       <span class="celsiusSymbol">°C</span>
                     </div>
                   </li>
@@ -96,14 +94,20 @@
                     <span class="month" id="month-displayed"></span>
                     <span class="year" id="year-displayed"></span>
                   </li>
-                </ul>
-              </div>
+                </div>
+              </ul>
             </div>
           </div>
           <div class="col-6">
             <ul class="second-list">
-              <li>Wind : <span id="wind"></span>mp/h</li>
-              <li>Humidity : <span id="humidity"></span>%</li>
+              <li>
+                <span class="wind"> Wind</span> : <span id="wind"></span>
+                <span class="wind"> mp/h</span>
+              </li>
+              <li>
+                <span class="humidity">Humidity</span> :
+                <span id="humidity"></span>%
+              </li>
             </ul>
           </div>
           <div class="weather-forecast" id="forecast"></div>

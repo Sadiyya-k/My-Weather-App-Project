@@ -22,11 +22,12 @@ li:first-letter {
 }
 
 footer {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 25px;
+  font-weight: 700;
   margin: 0 auto;
   max-width: 85%;
   color: #d01362;
+  font-family: "Tangerine", cursive;
 }
 a {
   text-decoration: none;
@@ -41,14 +42,48 @@ a {
 
 .first-list {
   margin-left: 15px;
-  margin-top: 40px;
+  margin-top: 45px;
   padding-left: 0;
   background-color: #edcbdd;
-  max-width: 90%;
-  height: 90%;
+  max-width: 70%;
+  height: 95%;
   border-radius: 40px;
   text-align: center;
 }
+.temp {
+  font-size: 50px;
+  margin-top: -40px;
+  margin-bottom: 0;
+}
+.feels-like {
+  font-size: 35px;
+  margin-top: -15px;
+  font-weight: 500;
+  font-family: "Tangerine", cursive;
+}
+
+.place-of-search {
+  font-size: 55px;
+  margin-top: -15px;
+  font-weight: bold;
+  font-family: "Tangerine", cursive;
+}
+.time {
+  font-size: 20px;
+  margin-top: -5px;
+}
+
+.todays-date {
+  font-size: 20px;
+  margin-top: -5px;
+  margin-left: 3px;
+  margin-bottom: 60px;
+  padding-bottom: 10px;
+}
+.month {
+  font-family: "Tangerine", cursive;
+}
+
 .navbar {
   border-radius: 20px;
 }
@@ -57,6 +92,15 @@ a {
 }
 .second-list {
   margin-top: 30px;
+  font-size: 20px;
+}
+.wind {
+  font-family: "Tangerine", cursive;
+  font-size: 30px;
+}
+.humidity {
+  font-family: "Tangerine", cursive;
+  font-size: 30px;
 }
 .form-control {
   max-width: 100%;
@@ -69,35 +113,6 @@ a {
   margin: 15px auto;
   padding-right: 10px;
   background-color: #d01362;
-}
-.temp {
-  font-size: 48px;
-  margin-top: -25px;
-  margin-bottom: 0;
-}
-.feels-like {
-  font-size: 27px;
-  margin-top: -15px;
-  font-weight: 500;
-  font-family: "Tangerine", cursive;
-}
-
-.place-of-search {
-  font-size: 40px;
-  margin-top: -15px;
-  font-weight: bold;
-  font-family: "Tangerine", cursive;
-}
-.time {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.todays-date {
-  font-size: 20px;
-  margin-top: -5px;
-  margin-left: 3px;
-  margin-bottom: 50px;
 }
 
 .location-button {
@@ -159,13 +174,19 @@ a {
   margin: 20px;
   margin-left: -5px;
   text-align: center;
+  font-family: "Tangerine", cursive;
 }
 .weather-forecast-date {
-  font-size: 20px;
+  font-size: 30px;
 }
 .weather-forecast-temperatures {
   font-size: 22px;
+  font-family: sans-serif;
 }
 .weather-forecast-temperature-min {
   opacity: 0.7;
+}
+.flex-box {
+  display: flexbox;
+  flex-direction: row;
 }
