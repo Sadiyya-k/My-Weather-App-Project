@@ -1,7 +1,15 @@
+html,
 body {
   padding: 25px;
+  max-width: 100%;
+  max-height: 100%;
 }
-
+body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/476/original/white-rainforest-AIIJhPKT4zk-unsplash.jpg?1678737973);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+}
 h1 {
   margin-top: -10px;
 }
@@ -14,17 +22,19 @@ li:first-letter {
 }
 
 footer {
-  font-size: 13px;
-  font-weight: 200;
+  font-size: 16px;
+  font-weight: 400;
   margin: 0 auto;
   max-width: 85%;
+  color: #d01362;
 }
 a {
   text-decoration: none;
 }
+
 .weather-app {
   margin: 25px auto;
-  border: 1px solid black;
+  border: 3px solid #edcbdd;
   border-radius: 10px;
   max-width: 85%;
 }
@@ -33,7 +43,7 @@ a {
   margin-left: 15px;
   margin-top: 40px;
   padding-left: 0;
-  background-color: #ececec;
+  background-color: #edcbdd;
   max-width: 90%;
   height: 90%;
   border-radius: 40px;
@@ -50,6 +60,7 @@ a {
 }
 .form-control {
   max-width: 100%;
+  background-color: #f9ecec;
 }
 
 .bg-body-tertiary {
@@ -57,8 +68,8 @@ a {
   width: 75%;
   margin: 15px auto;
   padding-right: 10px;
+  background-color: #d01362;
 }
-
 .temp {
   font-size: 48px;
   margin-top: -25px;
@@ -67,13 +78,15 @@ a {
 .feels-like {
   font-size: 27px;
   margin-top: -15px;
-  font-weight: 300;
+  font-weight: 500;
+  font-family: "Tangerine", cursive;
 }
 
 .place-of-search {
   font-size: 40px;
   margin-top: -15px;
-  font-weight: 600;
+  font-weight: bold;
+  font-family: "Tangerine", cursive;
 }
 .time {
   font-size: 20px;
@@ -88,45 +101,63 @@ a {
 }
 
 .location-button {
-  font-size: 15px;
+  font-size: 20px;
   padding: 7px 11px;
   margin: 10px;
   border-radius: 7px;
-  border: 1px solid #198754;
-  color: #198754;
+  border: 1px solid #d01362;
+  color: #d01362;
   background: none;
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  width: 90px;
+}
+.location-button:hover {
+  border: 1px solid #0062ca;
 }
 .current-button {
-  font-size: 15px;
+  font-size: 20px;
   padding: 7px 11px;
-  margin: 10px;
+  margin-right: 10px;
   border-radius: 7px;
-  border: 1px solid #198754;
-  color: #198754;
+  border: 1px solid #d01362;
+  color: #d01362;
   background: none;
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  width: 90px;
+}
+.current-button:hover {
+  border: 1px solid #0062ca;
 }
 .conversion-button {
   font-size: 15px;
   border-radius: 7px;
-  border: 1px solid #198754;
-  color: #198754;
+  border: 1px solid #d01362;
+  color: #d01362;
   background: none;
   margin: 0 auto;
   padding: 7px 11px;
   text-align: center;
   width: 90px;
+  height: 47px;
+  font-family: "Tangerine", cursive;
+  font-weight: 500;
 }
-
+.conversion-button:hover {
+  border: 1px solid #0062ca;
+}
 .active {
-  color: red;
+  color: #d01362;
   cursor: default;
 }
 .active:hover {
   text-decoration: none;
+  color: #0062ca;
 }
 .weather-forecast {
   margin: 20px;
-  margin-left: -5px ;
+  margin-left: -5px;
   text-align: center;
 }
 .weather-forecast-date {
