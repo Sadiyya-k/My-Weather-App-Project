@@ -41,8 +41,9 @@ a {
 }
 
 .first-list {
-  margin-left: 15px;
+  margin-left: 35px;
   margin-top: 45px;
+  margin-bottom: 15px;
   padding-left: 0;
   background-color: #edcbdd;
   max-width: 70%;
@@ -84,7 +85,6 @@ a {
   padding-bottom: 10px;
   font-family: "Charm", cursive;
 }
-
 .navbar {
   border-radius: 20px;
 }
@@ -92,25 +92,24 @@ a {
   font-size: 25px;
 }
 .second-list {
-  
-  margin-top: 150px;
+  margin-top: 130px;
+  margin-left: 55px;
   font-size: 20px;
+  
 }
 .wind {
   font-family: "Tangerine", cursive;
   font-size: 35px;
-  
 }
 .humidity {
   font-family: "Tangerine", cursive;
   font-size: 35px;
-  
 }
 .form-control {
   max-width: 100%;
   background-color: #f9ecec;
   font-family: "Charm", cursive;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .bg-body-tertiary {
