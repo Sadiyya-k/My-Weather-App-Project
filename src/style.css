@@ -54,34 +54,35 @@ a {
   font-size: 50px;
   margin-top: -40px;
   margin-bottom: 0;
+  font-family: "Charm", cursive;
 }
 .feels-like {
-  font-size: 35px;
+  font-size: 40px;
   margin-top: -15px;
   font-weight: 400;
   font-family: "Tangerine", cursive;
 }
 
 .place-of-search {
-  font-size: 55px;
+  font-size: 60px;
   margin-top: -15px;
-  font-weight: bold;
+  font-weight: 700;
   font-family: "Tangerine", cursive;
 }
 .time {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: -5px;
+  margin-bottom: 10px;
+  font-family: "Charm", cursive;
 }
 
 .todays-date {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: -5px;
   margin-left: 3px;
   margin-bottom: 60px;
   padding-bottom: 10px;
-}
-.month {
-  font-family: "Tangerine", cursive;
+  font-family: "Charm", cursive;
 }
 
 .navbar {
@@ -91,20 +92,25 @@ a {
   font-size: 25px;
 }
 .second-list {
-  margin-top: 30px;
+  
+  margin-top: 150px;
   font-size: 20px;
 }
 .wind {
   font-family: "Tangerine", cursive;
-  font-size: 30px;
+  font-size: 35px;
+  
 }
 .humidity {
   font-family: "Tangerine", cursive;
-  font-size: 30px;
+  font-size: 35px;
+  
 }
 .form-control {
   max-width: 100%;
   background-color: #f9ecec;
+  font-family: "Charm", cursive;
+  font-size: 30px;
 }
 
 .bg-body-tertiary {
@@ -129,6 +135,7 @@ a {
 }
 .location-button:hover {
   border: 1px solid #0062ca;
+  color: #0062ca;
 }
 .current-button {
   font-size: 20px;
@@ -144,6 +151,7 @@ a {
 }
 .current-button:hover {
   border: 1px solid #0062ca;
+  color: #0062ca;
 }
 .conversion-button {
   font-size: 15px;
@@ -161,6 +169,7 @@ a {
 }
 .conversion-button:hover {
   border: 1px solid #0062ca;
+  color: #0062ca;
 }
 .active {
   color: #d01362;
@@ -175,14 +184,13 @@ a {
   margin-left: -5px;
   text-align: center;
   font-family: "Charm", cursive;
- 
 }
 .weather-forecast-date {
   font-size: 25px;
 }
 .weather-forecast-temperatures {
   font-size: 22px;
-  font-family: sans-serif;
+  font-family: "Charm", cursive;
 }
 .weather-forecast-temperature-min {
   opacity: 0.7;
