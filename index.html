@@ -36,6 +36,12 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Kanit:wght@100&family=Tangerine:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Tangerine:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -65,7 +71,7 @@
 
                   <button type="button" class="btn conversion-button">
                     <span id="fahrenheit-link" class="temperature-unit">°F</span
-                    ><span> |</span
+                    ><span> | </span
                     ><span id="celsius-link" class="active">°C </span>
                   </button>
                 </form>
@@ -97,18 +103,18 @@
                 </div>
               </ul>
             </div>
-          </div>
-          <div class="col-6">
-            <ul class="second-list">
-              <li>
-                <span class="wind"> Wind</span> : <span id="wind"></span>
-                <span class="wind"> mp/h</span>
-              </li>
-              <li>
-                <span class="humidity">Humidity</span> :
-                <span id="humidity"></span>%
-              </li>
-            </ul>
+            <div class="col-6">
+              <ul class="second-list">
+                <li>
+                  <span class="wind"> Wind</span> : <span id="wind"></span>
+                  <span class="wind"> mp/h</span>
+                </li>
+                <li>
+                  <span class="humidity">Humidity</span> :
+                  <span id="humidity"></span>%
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="weather-forecast" id="forecast"></div>
         </div>

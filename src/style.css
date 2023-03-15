@@ -27,7 +27,7 @@ footer {
   margin: 0 auto;
   max-width: 85%;
   color: #d01362;
-  font-family: "Tangerine", cursive;
+  font-family: "Charm", cursive;
 }
 a {
   text-decoration: none;
@@ -58,7 +58,7 @@ a {
 .feels-like {
   font-size: 35px;
   margin-top: -15px;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Tangerine", cursive;
 }
 
@@ -123,7 +123,7 @@ a {
   border: 1px solid #d01362;
   color: #d01362;
   background: none;
-  font-family: "Tangerine", cursive;
+  font-family: "Charm", cursive;
   font-weight: 700;
   width: 90px;
 }
@@ -138,7 +138,7 @@ a {
   border: 1px solid #d01362;
   color: #d01362;
   background: none;
-  font-family: "Tangerine", cursive;
+  font-family: "Charm", cursive;
   font-weight: 700;
   width: 90px;
 }
@@ -156,8 +156,8 @@ a {
   text-align: center;
   width: 90px;
   height: 47px;
-  font-family: "Tangerine", cursive;
-  font-weight: 500;
+  font-family: "Charm", cursive;
+  font-weight: 700;
 }
 .conversion-button:hover {
   border: 1px solid #0062ca;
@@ -171,13 +171,14 @@ a {
   color: #0062ca;
 }
 .weather-forecast {
-  margin: 20px;
+  margin: 30px;
   margin-left: -5px;
   text-align: center;
-  font-family: "Tangerine", cursive;
+  font-family: "Charm", cursive;
+ 
 }
 .weather-forecast-date {
-  font-size: 30px;
+  font-size: 25px;
 }
 .weather-forecast-temperatures {
   font-size: 22px;
