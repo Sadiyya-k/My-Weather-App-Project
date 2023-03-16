@@ -78,9 +78,9 @@
               </div>
             </nav>
           </form>
-          
+
           <div class="row">
-            <div class="col-6">
+            <div class="col-5">
               <ul class="first-list">
                 <div class="flex-box">
                   <li class="temp">
@@ -89,9 +89,9 @@
                       alt="Clear"
                       id="icon"
                     />
-                    <div>
+                    <div class="d-flex justify-content-center">
                       <span id="current-temperature"></span>
-                      <span class="celsiusSymbol">°C</span>
+                      <span class="celsiusSymbol mt-2 ms-1">°C</span>
                     </div>
                   </li>
                   <li class="feels-like" id="description"></li>
@@ -104,7 +104,7 @@
                 </div>
               </ul>
             </div>
-            <div class="col-6">
+            <div class="col-7">
               <ul class="second-list">
                 <li>
                   <span class="wind"> Wind</span> : <span id="wind"></span>
@@ -114,14 +114,25 @@
                   <span class="humidity">Humidity</span> :
                   <span id="humidity"></span>%
                 </li>
+                <br />
+                <div>
+                  <li class="display-quote" id="display-quote"></li>
+                  <button class="quote-button" type="search" id="quote-button">
+                    Dose of Motivation
+                  </button>
+                </div>
               </ul>
             </div>
           </div>
-          <div class="weather-forecast" id="forecast"></div>
+          <div class="weather-forecast d-block" id="forecast"></div>
+          <div class="weather-forecast d-none" id="forecast-fahrenheit"></div>
         </div>
       </div>
       <footer>
-        <a href="https://github.com/Sadiyya-k/My-Weather-App-Project.git" target="_blank">
+        <a
+          href="https://github.com/Sadiyya-k/My-Weather-App-Project.git"
+          target="_blank"
+        >
           Open-source code,</a
         >
         by Sadiyya Khan hosted on Netlify

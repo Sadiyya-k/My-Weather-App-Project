@@ -138,20 +138,40 @@ function showCurrentLocation(event) {
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let currentTemperature = document.querySelector("#current-temperature");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
 
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
+
+  forecastCelsius.classList.add("d-none");
+  forecastCelsius.classList.remove("d-block");
 }
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
+  currentTemperature.innerHTML = Math.round(celsiusTemperature);
+
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
-  let currentTemperature = document.querySelector("#current-temperature");
-  currentTemperature.innerHTML = Math.round(celsiusTemperature);
+
+  forecastFahrenheit.classList.add("d-none");
+  forecastFahrenheit.classList.remove("d-block");
 }
+
+function newQuote() {
+  let quotes = [
+    `Success is not final; failure is not fatal: It is the courage to continue that counts. — Winston S. Churchill`,
+    `It is better to fail in originality than to succeed in imitation. — Herman Melville`,
+    `The road to success and the road to failure are almost exactly the same. — Colin R. Davis`,
+    `Success usually comes to those who are too busy looking for it. — Henry David Thoreau`,
+  ];
+  let randomNumber = Math.floor(Math.random() * quotes.length);
+  document.getElementById(`display-quote`).innerHTML = quotes[randomNumber];
+}
+
+let quoteButton = document.querySelector("#quote-button");
+quoteButton.addEventListener("click", newQuote);
 
 let celsiusTemperature = null;
 
@@ -161,10 +181,16 @@ button.addEventListener("click", showCurrentLocation);
 let searchForm = document.querySelector("#search-engine");
 searchForm.addEventListener("submit", searchSubmit);
 
+let forecastFahrenheit = document.querySelector("#forecast-farenheit");
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
+let forecastCelsius = document.querySelector("#forecast");
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("london");
+
+newQuote(
+  "Wherever you go, no matter what the weather, always bring your own sunshine. Anthony J. D'Angelo"
+);
