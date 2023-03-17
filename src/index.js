@@ -57,15 +57,18 @@ function displayForecast(response) {
       forecastHtml =
         forecastHtml +
         ` 
+
                 <div class="col-2">
+               <div class="card">
+                <div class="forecast-container">
                   <div class="weather-forecast-date">${formatDay(
                     forecastDay.time
-                  )}</div>
+                  )}</div>               
                   <img
                     src="${forecastDay.condition.icon_url}"
                     alt=""
-                    width="50"
-                  />
+                    width="70"
+                  /> 
                   <div class="weather-forecast-temperatures">
                     <span class="weather-forecast-temperature-max"> ${Math.round(
                       forecastDay.temperature.maximum
@@ -73,8 +76,11 @@ function displayForecast(response) {
                     <span class="weather-forecast-temperature-min"> ${Math.round(
                       forecastDay.temperature.minimum
                     )}°</span>
+                    </div>
+                    </div>
                   </div>
                 </div>
+                
           `;
     }
   });

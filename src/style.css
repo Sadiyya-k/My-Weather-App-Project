@@ -111,10 +111,6 @@ a {
 .display-quote {
   font-family: "Charm", cursive;
   font-size: 28px;
-}
-
-
-.display-quote {
   margin-top: 50px;
   margin-left: -45px;
 }
@@ -193,7 +189,7 @@ a {
   color: #d01362;
   padding: 7px 11px;
   font-size: 20px;
-  font-family: "Tangerine", cursive;
+  font-family: "Charm", cursive;
   float: right;
 }
 .quote-button:hover {
@@ -209,16 +205,16 @@ a {
   color: #0062ca;
 }
 .weather-forecast {
-  margin: 30px;
-  margin-left: -5px;
+  margin: 35px;
   text-align: center;
   font-family: "Charm", cursive;
 }
 .weather-forecast-date {
   font-size: 25px;
 }
+
 .weather-forecast-temperatures {
-  font-size: 22px;
+  font-size: 24px;
   font-family: "Charm", cursive;
 }
 .weather-forecast-temperature-min {
@@ -227,4 +223,7 @@ a {
 .flex-box {
   display: flexbox;
   flex-direction: row;
+}
+.forecast-container {
+  background-color: #f9ecec;
 }
