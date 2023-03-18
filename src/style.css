@@ -76,6 +76,7 @@ a {
   font-weight: 700;
   font-family: "Tangerine", cursive;
 }
+
 .time {
   font-size: 25px;
   margin-top: -5px;
@@ -108,26 +109,18 @@ a {
   font-size: 30px;
 }
 
-.display-quote {
-  font-family: "Charm", cursive;
-  font-size: 28px;
-  margin-top: 50px;
-  margin-left: -45px;
-}
-
 .form-control {
   max-width: 100%;
   background-color: #f9ecec;
   font-family: "Charm", cursive;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .bg-body-tertiary {
   flex-wrap: nowrap;
-  width: 75%;
+  width: 85%;
   margin: 15px auto;
   padding-right: 10px;
-  background-color: #d01362;
 }
 
 .location-button {
@@ -142,10 +135,12 @@ a {
   font-weight: 700;
   width: 90px;
 }
+
 .location-button:hover {
   border: 1px solid #0062ca;
   color: #0062ca;
 }
+
 .current-button {
   font-size: 20px;
   padding: 7px 11px;
@@ -158,10 +153,12 @@ a {
   font-weight: 700;
   width: 90px;
 }
+
 .current-button:hover {
   border: 1px solid #0062ca;
   color: #0062ca;
 }
+
 .conversion-button {
   font-size: 15px;
   border-radius: 7px;
@@ -176,16 +173,18 @@ a {
   font-family: "Charm", cursive;
   font-weight: 700;
 }
+
 .conversion-button:hover {
   border: 1px solid #0062ca;
   color: #0062ca;
 }
+
 .quote-button {
   margin-top: 30px;
   margin-right: 5px;
   border-radius: 7px;
   border: 2px solid #d01362;
-  background-color: white;
+  background-color: #fff;
   color: #d01362;
   padding: 7px 11px;
   font-size: 20px;
@@ -196,19 +195,23 @@ a {
   border: 2px solid #0062ca;
   color: #0062ca;
 }
+
 .active {
   color: #d01362;
   cursor: default;
 }
+
 .active:hover {
   text-decoration: none;
   color: #0062ca;
 }
+
 .weather-forecast {
   margin: 35px;
   text-align: center;
   font-family: "Charm", cursive;
 }
+
 .weather-forecast-date {
   font-size: 25px;
 }
@@ -217,18 +220,41 @@ a {
   font-size: 24px;
   font-family: "Charm", cursive;
 }
+
 .weather-forecast-temperature-min {
   opacity: 0.8;
 }
+
 .flex-box {
   display: flexbox;
   flex-direction: row;
 }
+
 .forecast-container {
   background-color: #f9ecec;
   border-radius: 20px;
+  border: 1px solid #d01362;
 }
-.card{
+
+.display-quote {
+  font-family: "Charm", cursive;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-left: -45px;
+}
+
+.card {
   background: none;
   border: none;
+}
+
+.end-note {
+  float: right;
+  font-size: 14px;
+  font-family: "Charm", cursive;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-right: 5px;
+  color: #0062ca;
+  text-decoration: underline;
 }

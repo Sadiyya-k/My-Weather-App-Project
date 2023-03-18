@@ -79,8 +79,8 @@ function displayForecast(response) {
                     </div>
                     </div>
                   </div>
-                </div>
-                
+                </div>                    
+
           `;
     }
   });
@@ -150,12 +150,12 @@ function displayFahrenheitTemperature(event) {
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
 
-  forecastCelsius.classList.add("d-none");
   forecastCelsius.classList.remove("d-block");
 }
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
+  let currentTemperature = document.querySelector("#current-temperature");
   currentTemperature.innerHTML = Math.round(celsiusTemperature);
 
   celsiusLink.classList.add("active");
@@ -165,7 +165,9 @@ function displayCelsiusTemperature(event) {
   forecastFahrenheit.classList.remove("d-block");
 }
 
-function newQuote() {
+function newQuote(event) {
+  event.preventDefault();
+
   let quotes = [
     `Wherever you go, no matter what the weather, always bring your own sunshine. - Anthony J. D'Angelo`,
     `Success is not final; failure is not fatal: It is the courage to continue that counts. — Winston S. Churchill`,
@@ -206,5 +208,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("london");
-
-newQuote("Click to see who is inspiring you today");
