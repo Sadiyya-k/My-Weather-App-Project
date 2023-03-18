@@ -167,10 +167,20 @@ function displayCelsiusTemperature(event) {
 
 function newQuote() {
   let quotes = [
+    `Wherever you go, no matter what the weather, always bring your own sunshine. - Anthony J. D'Angelo`,
     `Success is not final; failure is not fatal: It is the courage to continue that counts. — Winston S. Churchill`,
     `It is better to fail in originality than to succeed in imitation. — Herman Melville`,
     `The road to success and the road to failure are almost exactly the same. — Colin R. Davis`,
+    `You are never too old to set another goal or to dream a new dream. — Malala Yousafzai`,
     `Success usually comes to those who are too busy looking for it. — Henry David Thoreau`,
+    `Don’t let yesterday take up too much of today. — Will Rogers`,
+    `God does not burden any soul with more than it can bear. - Quran 2:286`,
+    `If you are working on something that you really care about, you don’t have to be pushed. The vision pulls you. — Steve Jobs`,
+    `Concentrate all your thoughts upon the work in hand. The sun's rays do not burn until brought to a focus. — Alexander Graham Bell`,
+    `Just one small positive thought in the morning can change your whole day. — Dalai Lama`,
+    `Do not lose hope, nor be sad. Quran 3:139`,
+    `Opportunities don't happen, you create them. — Chris Grosser`,
+    `Keep your face always toward the sunshine, and shadows will fall behind you. — Walt Whitman`,
   ];
   let randomNumber = Math.floor(Math.random() * quotes.length);
   document.getElementById(`display-quote`).innerHTML = quotes[randomNumber];
@@ -197,6 +207,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("london");
 
-newQuote(
-  "Wherever you go, no matter what the weather, always bring your own sunshine. Anthony J. D'Angelo"
-);
+newQuote("Click to see who is inspiring you today");

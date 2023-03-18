@@ -218,7 +218,7 @@ a {
   font-family: "Charm", cursive;
 }
 .weather-forecast-temperature-min {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .flex-box {
   display: flexbox;
@@ -226,4 +226,9 @@ a {
 }
 .forecast-container {
   background-color: #f9ecec;
+  border-radius: 20px;
+}
+.card{
+  background: none;
+  border: none;
 }
