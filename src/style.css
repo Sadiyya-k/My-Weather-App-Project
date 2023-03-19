@@ -258,13 +258,13 @@ a {
 
 .end-note {
   float: right;
-  font-size: 14px;
+  font-size: 15px;
   font-family: "Charm", cursive;
   font-weight: 700;
   margin-top: 5px;
   margin-right: 5px;
-  color: #0062ca;
-  text-decoration: underline;
+  color: #d01362;
+
 }
 .attribute {
   margin-top: 15px;
@@ -273,8 +273,7 @@ a {
   color: #0062ca;
 }
 
-.divider{
+.divider {
   font-size: 22px;
   margin-bottom: 5px;
-  
 }
