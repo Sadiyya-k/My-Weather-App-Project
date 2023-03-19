@@ -131,17 +131,19 @@ a {
   padding: 7px 11px;
   margin: 10px;
   border-radius: 7px;
-  border: 1px solid #d01362;
+  border: 2px solid #d01362;
   color: #d01362;
-  background: none;
+  background: #fff;
   font-family: "Charm", cursive;
   font-weight: 700;
   width: 90px;
+  box-shadow: 1px 1px 1px #edcbdd;
 }
 
 .location-button:hover {
-  border: 1px solid #0062ca;
+  border: 2px solid #0062ca;
   color: #0062ca;
+  box-shadow: 1px 1px 1px #0062ca;
 }
 
 .current-button {
@@ -149,25 +151,27 @@ a {
   padding: 7px 11px;
   margin-right: 10px;
   border-radius: 7px;
-  border: 1px solid #d01362;
+  border: 2px solid #d01362;
   color: #d01362;
-  background: none;
+  background: #fff;
   font-family: "Charm", cursive;
   font-weight: 700;
   width: 90px;
+  box-shadow: 1px 1px 1px #edcbdd;
 }
 
 .current-button:hover {
-  border: 1px solid #0062ca;
+  border: 2px solid #0062ca;
   color: #0062ca;
+  box-shadow: 1px 1px 1px #0062ca;
 }
 
 .conversion-button {
   font-size: 15px;
   border-radius: 7px;
-  border: 1px solid #d01362;
+  border: 2px solid #d01362;
   color: #d01362;
-  background: none;
+  background: #fff;
   margin: 0 auto;
   padding: 7px 11px;
   text-align: center;
@@ -175,11 +179,13 @@ a {
   height: 47px;
   font-family: "Charm", cursive;
   font-weight: 700;
+  box-shadow: 1px 1px 1px #edcbdd;
 }
 
 .conversion-button:hover {
-  border: 1px solid #0062ca;
+  border: 2px solid #0062ca;
   color: #0062ca;
+  box-shadow: 1px 1px 1px #0062ca;
 }
 
 .display-quote {
@@ -201,11 +207,13 @@ a {
   padding: 7px 11px;
   font-size: 20px;
   font-family: "Charm", cursive;
+  box-shadow: 1px 1px 1px #d01362;
 }
 
 .quote-button:hover {
   border: 2px solid #0062ca;
   color: #0062ca;
+  box-shadow: 1px 1px 1px #0062ca;
 }
 
 .quote-button:active {
@@ -264,7 +272,6 @@ a {
   margin-top: 5px;
   margin-right: 5px;
   color: #d01362;
-
 }
 .attribute {
   margin-top: 15px;
