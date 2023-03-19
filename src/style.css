@@ -26,9 +26,9 @@ li:first-letter {
 }
 
 footer {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 700;
-  margin: 0 auto;
+  margin: -20px auto;
   max-width: 85%;
   color: #d01362;
   font-family: "Charm", cursive;
@@ -36,6 +36,7 @@ footer {
 
 a {
   text-decoration: none;
+  color: #0062ca;
 }
 
 .weather-app {
@@ -104,10 +105,11 @@ a {
 
 .second-list {
   margin-top: 60px;
-  margin-left: 60px;
+  margin-left: -100px;
   float: left;
   font-family: "Charm", cursive;
   font-size: 25px;
+  color: #000;
 }
 
 .form-control {
@@ -119,7 +121,7 @@ a {
 
 .bg-body-tertiary {
   flex-wrap: nowrap;
-  width: 85%;
+  width: 93%;
   margin: 15px auto;
   padding-right: 10px;
 }
@@ -180,6 +182,15 @@ a {
   color: #0062ca;
 }
 
+.display-quote {
+  font-family: "Charm", cursive;
+  font-size: 28px;
+  margin-top: 50px;
+  margin-left: 0;
+  color: black;
+  position: relative;
+}
+
 .quote-button {
   margin-top: 30px;
   margin-right: 5px;
@@ -190,13 +201,16 @@ a {
   padding: 7px 11px;
   font-size: 20px;
   font-family: "Charm", cursive;
-  float: right;
 }
+
 .quote-button:hover {
   border: 2px solid #0062ca;
   color: #0062ca;
 }
 
+.quote-button:active {
+  position: fixed;
+}
 .active {
   color: #d01362;
   cursor: default;
@@ -237,13 +251,6 @@ a {
   border: 2px solid #d01362;
 }
 
-.display-quote {
-  font-family: "Charm", cursive;
-  font-size: 28px;
-  margin-top: 50px;
-  margin-left: -45px;
-}
-
 .card {
   background: none;
   border: none;
@@ -258,4 +265,16 @@ a {
   margin-right: 5px;
   color: #0062ca;
   text-decoration: underline;
+}
+.attribute {
+  margin-top: 15px;
+  margin-left: 97px;
+  font-family: "Charm", cursive;
+  color: #0062ca;
+}
+
+.divider{
+  font-size: 22px;
+  margin-bottom: 5px;
+  
 }
