@@ -6,10 +6,11 @@ body {
 }
 
 body {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/476/original/white-rainforest-AIIJhPKT4zk-unsplash.jpg?1678737973);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/570/original/6478892.jpg?1679227000);
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
+  width: 100%;
 }
 
 h1 {
@@ -39,7 +40,7 @@ a {
 
 .weather-app {
   margin: 25px auto;
-  border: 3px solid #edcbdd;
+  border: 3px solid #d01362;
   border-radius: 10px;
   max-width: 85%;
 }
@@ -106,7 +107,7 @@ a {
   margin-left: 60px;
   float: left;
   font-family: "Charm", cursive;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .form-control {
@@ -233,7 +234,7 @@ a {
 .forecast-container {
   background-color: #f9ecec;
   border-radius: 20px;
-  border: 1px solid #d01362;
+  border: 2px solid #d01362;
 }
 
 .display-quote {

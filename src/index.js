@@ -144,8 +144,10 @@ function showCurrentLocation(event) {
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let currentTemperature = document.querySelector("#current-temperature");
+  let unit = document.querySelector(".celsiusSymbol");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
+  unit.innerHTML = "°F";
 
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
@@ -156,7 +158,10 @@ function displayFahrenheitTemperature(event) {
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   let currentTemperature = document.querySelector("#current-temperature");
+  let unit = document.querySelector(".celsiusSymbol");
+
   currentTemperature.innerHTML = Math.round(celsiusTemperature);
+  unit.innerHTML = "°C";
 
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
@@ -180,7 +185,7 @@ function newQuote(event) {
     `If you are working on something that you really care about, you don’t have to be pushed. The vision pulls you. — Steve Jobs`,
     `Concentrate all your thoughts upon the work in hand. The sun's rays do not burn until brought to a focus. — Alexander Graham Bell`,
     `Just one small positive thought in the morning can change your whole day. — Dalai Lama`,
-    `Do not lose hope, nor be sad. Quran 3:139`,
+    `Do not lose hope, nor be sad. - Quran 3:139`,
     `Opportunities don't happen, you create them. — Chris Grosser`,
     `Keep your face always toward the sunshine, and shadows will fall behind you. — Walt Whitman`,
   ];
